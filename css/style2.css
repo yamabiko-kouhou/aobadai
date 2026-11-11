@@ -98,7 +98,7 @@ h1 img {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 230px;
+  width: 210px;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -881,9 +881,9 @@ table.timetable_list td small {
 	display: inline-block;
 }
 .features-container .sub {
-	font-size: .95rem;
-	line-height: 1.2;
-	text-align: center;
+	font-size: 1rem;
+	line-height: 1.7;
+	text-align: left;
 }
 @media screen and (max-width:767px)  {
 	.bg-photo {
@@ -895,9 +895,6 @@ table.timetable_list td small {
 	}
 	.features-container .main {
 		font-size: 1.2rem;
-	}
-	.features-container .sub {
-		text-align: left;
 	}
 }
 
@@ -1969,6 +1966,103 @@ a.ap {
 
 
 
+/*------------------- リウマチ内科ページ -------------------*/
+.reflex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 20px;
+}	
+.reflex img {
+	max-width: 15%;
+	height: auto;
+}
+@media screen and (max-width: 768px) {
+	.reflex  {
+		flex-direction: column;
+		align-items: center;
+	}
+	.reflex img {
+		width: 50%;
+		margin-top: 10px;
+	}
+}
+.box2-2 {
+	margin: 2em;
+	padding: 2em;
+	border-left: solid 5px #1E3075;
+	background-color: #fff;
+	box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.2);
+}
+h5 {
+	color: #fff;
+	background: #1E3075;
+	padding: 5px;
+	border-radius: 30px;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.mb15 {
+	margin-bottom: 15px;
+}	
+.list09 {
+	margin: 0 0 15px;
+	margin-bottom: 27px;
+	padding: 5px;
+	border-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.list09 li {
+	position: relative;
+	margin: 0 10px 30px;
+	border-bottom: 1px dotted var;
+	list-style-type: none;
+	display: inline-block;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+	background: white;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+}	
+.list09 a:hover {
+	opacity: 0.5;
+}	
+.chui {
+	padding-left:0;
+}
+.chui li {
+	list-style: none;
+	margin-bottom: 8px;
+}	
+ul.chui {
+	margin-left: 20px;
+	color: #000;
+}
+.syoujo {
+	padding-top: 80px;
+	margin: 0 30px;
+}
+.midap {
+	line-height: 29px;
+	margin-top: 10px;
+}
+.mida2 {
+	padding: 0.2rem;
+	margin-bottom: 0.5rem;
+	background: linear-gradient(transparent 60%, #dae9f7 60%);
+	margin-left: 7px;
+	font-weight: bold;
+}
+h6 {
+	color: #000000;
+	font-size: 1.2rem;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+
+
 /*------------------- リハビリページ -------------------*/
 .reha-img {
 	width: 50%;
@@ -2066,6 +2160,136 @@ a.ap {
 	.department-container li img {
 		width: 50%;
 		margin-bottom: 5px;
+	}
+}
+
+
+
+/*------------------- 健診ページ -------------------*/
+.kenshin th {
+	background: #f4f4f4;
+}
+.kenshin-price {
+	margin-bottom: 15px;
+	color: #262C69;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+.kenshin-price span {
+	font-size: 1.8rem;
+}
+.kenshin-tag {
+	margin-top: 15px;
+	display: flex;
+	font-size: .75rem;
+	font-weight: 500;
+}
+.kenshin-tag div {
+	margin-right: 8px;
+	padding: 0 3px;
+	background: #eee;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.table_03 caption {
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: #f4f4f4;
+	color: #666;
+	text-align: left;
+	font-weight: bold;
+}
+.table_03 {
+	table-layout: fixed;
+	width: 80%;
+	margin: 50px auto 20px;
+	background: #fff;
+	color: #555;
+	border-collapse: collapse;
+}
+.table_03, .table_03 td, .table_03 th {
+	word-break: break-all;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.table_03 th {
+	width: 150px;
+	text-align: center;
+}
+.table_03 label {
+	display: inline-block;
+}
+.table_option {
+	margin: 20px auto;
+	padding: 80px 0 0;
+}
+.table_option td {
+	text-align: center;
+}
+.index-menu-op {
+	width: 70%;
+	margin: 2em auto;
+	padding: 30px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+	background: #DCE7E9;
+	border-radius: 20px;
+	text-align: center;
+}
+.index-menu-op li a {
+	display: block;
+	padding: 10px 20px;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-radius: 10px;
+}
+.index-menu-op li a:hover {
+	background :#ddd;
+}
+.kenshin-info {
+	margin: 2em;
+	padding: 2em;
+	border-left: solid 5px #1E3075;
+	background-color: #fff;
+	box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.kenshin-info h5 {
+	color: #fff;
+	background: #1E3075;
+	padding: 5px;
+	border-radius: 30px;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 787px)  {
+	.table_03 {
+		width: 100%;
+	}
+	.table_option th {
+		text-align: left;
+	}
+	.index-menu-op {
+		width: 100%;
+		padding: 30px 10px;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 25px;
+	}
+	.index-menu-op li a {
+		padding: 10px 5px;
+	}
+	.kenshin-info {
+		margin: 2em 0;
+		padding: 1em;
+	}
+	.kenshin-info h5 {
+		padding: 5px;
+		border-radius: 50px;
+		font-size: 1rem;
 	}
 }
 
