@@ -839,6 +839,13 @@ table.timetable_list td small {
 	background-size: cover;
 	background-position: center center;
 }
+.bg-photo h2 {
+	text-shadow: 
+     1px  1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+}
 .features-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
