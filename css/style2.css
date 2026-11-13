@@ -1974,45 +1974,6 @@ a.ap {
 
 
 /*------------------- リウマチ内科ページ -------------------*/
-.reflex {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 20px;
-}	
-.reflex img {
-	max-width: 15%;
-	height: auto;
-}
-@media screen and (max-width: 768px) {
-	.reflex  {
-		flex-direction: column;
-		align-items: center;
-	}
-	.reflex img {
-		width: 50%;
-		margin-top: 10px;
-	}
-}
-.box2-2 {
-	margin: 2em;
-	padding: 2em;
-	border-left: solid 5px #1E3075;
-	background-color: #fff;
-	box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.2);
-}
-h5 {
-	color: #fff;
-	background: #1E3075;
-	padding: 5px;
-	border-radius: 30px;
-	font-size: 1.2rem;
-	text-align: center;
-	margin-bottom: 20px;
-}
-.mb15 {
-	margin-bottom: 15px;
-}	
 .list09 {
 	margin: 0 0 15px;
 	margin-bottom: 27px;
@@ -2034,21 +1995,24 @@ h5 {
 }	
 .list09 a:hover {
 	opacity: 0.5;
-}	
-.chui {
-	padding-left:0;
 }
-.chui li {
-	list-style: none;
-	margin-bottom: 8px;
-}	
-ul.chui {
-	margin-left: 20px;
-	color: #000;
+.mb15 {
+	margin-bottom: 15px;
 }
+
 .syoujo {
 	padding-top: 80px;
 	margin: 0 30px;
+}
+.reflex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 20px;
+}	
+.reflex img {
+	max-width: 15%;
+	height: auto;
 }
 .midap {
 	line-height: 29px;
@@ -2061,11 +2025,36 @@ ul.chui {
 	margin-left: 7px;
 	font-weight: bold;
 }
-h6 {
+.syoujo h6 {
 	color: #000000;
 	font-size: 1.2rem;
 	margin-left: 5px;
 	margin-bottom: 20px;
+}
+
+.kougen2 .chui {
+	padding-left:0;
+}
+.kougen2 .chui li {
+	list-style: none;
+	margin-bottom: 8px;
+}	
+.kougen2 ul.chui {
+	margin-left: 20px;
+	color: #000;
+}
+@media screen and (max-width: 768px) {
+	.reflex  {
+		flex-direction: column;
+		align-items: center;
+	}
+	.reflex img {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.syoujo {
+		margin: 0 auto;
+	}
 }
 
 
