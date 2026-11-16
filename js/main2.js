@@ -19,6 +19,16 @@ function initHamburger() {
 
     $body.toggleClass(open);
     $btn.toggleClass('active');
+
+    if ($body.hasClass(open)) {
+
+      $('.accordion').removeClass('active');
+      $('.submenu').stop(true, true).hide();
+
+      $('.default-open').children('.accordion').addClass('active');
+      $('.default-open').children('.submenu').show();
+
+    }
   });
 
   $nav.on('click', function(e) {
@@ -32,7 +42,7 @@ function initHamburger() {
 
   $('.accordion').on('click', function() {
     $(this).toggleClass('active');
-    $(this).next('.submenu').slideToggle();
+    $(this).next('.submenu').stop(true, true).slideToggle();
   });
 
 }
